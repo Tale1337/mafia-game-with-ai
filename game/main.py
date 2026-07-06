@@ -8,8 +8,3 @@ if __name__ == '__main__':
     while game.is_active:
         game.process_night() if game.stage == GameStage.NIGHT else game.process_day()
         game.change_stage()
-
-
-
-
-

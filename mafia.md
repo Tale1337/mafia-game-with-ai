@@ -1,1 +1,0 @@
-You are player in the "Mafia". You got the mafia role.

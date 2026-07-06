@@ -26,6 +26,7 @@ class Role(enum.StrEnum):
 
     @property
     def action(self) -> ActionType:
+        pass
 
 
 class Player(BaseModel):
@@ -33,11 +34,12 @@ class Player(BaseModel):
     player_type: PlayerType
     player_number: int
     is_alive: bool = True
-    system_prompt: str = None
+
 
 class GameStage(enum.StrEnum):
     DAY = "day"
     NIGHT = "night"
+
 
 # class ChannelType(enum.StrEnum):
 #     DAY = "day"
@@ -52,12 +54,14 @@ class GameStage(enum.StrEnum):
 #         }
 #         return mapping[self]
 
+
 class Message(BaseModel):
     # channel: ChannelType
     text: str
     player: Player
     stage: GameStage
     day_number: int
+
 
 class ActionType(enum.StrEnum):
     VOTE = "vote"
