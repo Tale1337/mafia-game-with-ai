@@ -75,6 +75,7 @@ class Player(BaseModel):
     player_number: int
     is_alive: bool = True
     system_prompt: str | None = None
+    mafia_ally_numbers: list[int] = []
 
 class GameStage(enum.StrEnum):
     DAY = "day"

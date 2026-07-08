@@ -1,6 +1,6 @@
-USER_PROMPT = """
-Текущий день: {day}
+USER_PROMPT = """{player_identity}
 
+Текущий день: {day}
 Текущая стадия: {stage}
 
 Живые игроки:
@@ -11,7 +11,7 @@ USER_PROMPT = """
 
 {history}
 
-{private_information}
+{current_votes_section}{private_information}
 
 {task}
 """
